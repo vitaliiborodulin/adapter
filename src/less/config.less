@@ -1,0 +1,93 @@
+// USER VARIABLES SECTION
+
+@accent: #00D385; // Accent Color
+@color-blue: #312D70; 
+@color-grey: #A9A9BD; 
+@fontsize: 18px; // Body Font Size
+@textcolor: #000000; // Text Color
+@mainfamily: 'Jost', sans-serif;; // Main Font Family
+
+
+// FONTS LOAD SECTION
+
+/* Light 300
+Regular 400
+Medium 500
+Semi-bold 600
+Bold 700 */
+
+// GENERAL DOCUMENT STYLES
+
+.reset();
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.container {
+	.wrapper();
+}
+
+::placeholder {
+	color: @textcolor;
+}
+
+::selection {
+	background-color: @accent;
+	color: #fff;
+}
+
+input,
+textarea {
+	outline: none;
+
+	&:focus:required:invalid {
+		border-color: red
+	}
+
+	&:required:valid {
+		border-color: green
+	}
+}
+// html {
+// 	scroll-behavior: smooth;
+// }
+
+body {
+	font-size: @fontsize;
+	min-width: 320px;
+	position: relative;
+	// line-height: 1.65;
+	font-family: @mainfamily;
+	font-weight: normal;
+	// overflow-x: hidden;
+	color: @textcolor;
+	// background-color: #E5E5E5;
+  	// letter-spacing: 0.01em;
+}
+
+input, button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.section__header {
+	max-width: 750px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 36px;
+	color: @color-blue;
+
+	span {
+		color: @accent;
+	}
+}
+
+
+
