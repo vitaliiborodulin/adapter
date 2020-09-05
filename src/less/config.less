@@ -3,6 +3,7 @@
 @accent: #00D385; // Accent Color
 @color-blue: #312D70; 
 @color-grey: #A9A9BD; 
+@bgc-grey: #F8FAFF;
 @fontsize: 18px; // Body Font Size
 @textcolor: #000000; // Text Color
 @mainfamily: 'Jost', sans-serif;; // Main Font Family
@@ -31,7 +32,7 @@ Bold 700 */
 }
 
 ::placeholder {
-	color: @textcolor;
+	color: @color-grey;
 }
 
 ::selection {
@@ -44,11 +45,11 @@ textarea {
 	outline: none;
 
 	&:focus:required:invalid {
-		border-color: red
+		border-color: @color-blue
 	}
 
 	&:required:valid {
-		border-color: green
+		border-color: @accent
 	}
 }
 // html {

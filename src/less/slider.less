@@ -1,0 +1,57 @@
+.owl-theme {
+    .owl-dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        
+        .owl-dot {
+            span {
+                width: 6px;
+                height: 6px;
+                background-color: @color-blue;
+            }
+
+            &.active {
+                span {
+                    background-color: @accent;
+                }
+            }
+        }
+    }
+
+    .owl-nav {
+        // position: absolute;
+        // top: 28%;
+        // transform: translateY(-50%);
+        width: 100%;
+        font-size: 0!important;
+    
+        .owl-prev, .owl-next {
+            // position: absolute;
+            width: 40px;
+            height: 16px;
+            background: url('../img/slider-arrow-prev.png') no-repeat!important;
+            outline: none;
+        }
+    
+        .owl-prev {
+            margin-right: 120px;
+            // left: -25px;
+        }
+        
+        .owl-next {
+            margin-left: 120px;
+            transform: rotate(180deg);
+            // right: -25px;
+        }
+    }
+    
+}
+
+
+
+        
+
+

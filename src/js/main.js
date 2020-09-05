@@ -4,6 +4,8 @@
 
 $(function(){
 
-   console.log(1);
+   //= components/maskedInput.js
+   //= components/slider.js
+   //= components/popup.js
 
   });
