@@ -52,13 +52,10 @@ textarea {
 		border-color: @accent
 	}
 }
-// html {
-// 	scroll-behavior: smooth;
-// }
 
 body {
+	min-width: 380px;
 	font-size: @fontsize;
-	min-width: 320px;
 	position: relative;
 	// line-height: 1.65;
 	font-family: @mainfamily;
@@ -82,7 +79,13 @@ input, button {
 	text-align: center;
 	font-weight: 500;
 	font-size: 30px;
+	// .md(font-size, 25px);
+    // .sm(font-size, 23px);
+    // .xs(font-size, 20px);
 	line-height: 36px;
+	// .md(line-height, 27px);
+    // .sm(line-height, 25px);
+    // .xs(line-height, 23px);
 	color: @color-blue;
 
 	span {

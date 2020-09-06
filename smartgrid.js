@@ -6,18 +6,18 @@ module.exports = {
         fields: '20px' // container
     },
     breakPoints: {
-        // lg: {
-        //     width: '992px',
-        // },
-        // md: {
-        //     width: '768px'
-        // },
-        // sm: {
-        //     width: '600px'
-        // },
-        // xs: {
-        //     width: '480px'
-        // },
+        lg: {
+            width: '992px',
+        },
+        md: {
+            width: '768px'
+        },
+        sm: {
+            width: '600px'
+        },
+        xs: {
+            width: '480px'
+        },
         // xxs: {
 			  //     width: '350px',
         // }

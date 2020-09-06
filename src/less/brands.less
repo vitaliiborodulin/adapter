@@ -1,19 +1,23 @@
 .brands {
     padding-top: 115px;
+    .lg(padding-top, 60px);
     padding-bottom: 40px;
 }
 
 .brands__list {
     .row-flex();
     justify-content: space-between;
+    .lg(justify-content, center);
     align-items: center;
 }
 .brands__item {
     .col();
     .size(3);
+    .size-lg(6);
 
-    width: 224px;
+    max-width: 224px;
     height: 160px;
+    .md(height, 100px);
 
     display: flex;
     justify-content: center;

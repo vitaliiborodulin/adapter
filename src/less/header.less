@@ -6,14 +6,21 @@
 .header__content {
     display: flex;
     align-items: center;
+    .lg-block({
+        flex-direction: column;
+        justify-content: center;
+    });
 }
 .header__image {
     margin-right: 100px;
+    .lg(margin-right, 0);
     width: 130px;
     height: 30px;
+    margin-bottom: 10px;
 }
 .header__text {
     max-width: 225px;
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -21,6 +28,7 @@
 }
 .header__user {
     margin-left: auto;
+    .lg(margin-left, 0);
     padding-left: 30px;
     font-size: 16px;
     font-weight: 500;

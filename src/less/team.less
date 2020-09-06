@@ -1,6 +1,10 @@
 .team {
     padding-top: 100px;
     padding-bottom: 120px;
+    .md-block({
+        padding-top: 50px;
+        padding-bottom: 60px;
+    })
 }
 
 .team__header {
@@ -17,6 +21,7 @@
 
 .team__item {
     width: 290px;
+    margin: 0 auto;
     padding: 20px;
     background: #FFFFFF;
 
@@ -26,6 +31,9 @@
 
     &--seo {
         margin: 0 20px;
+        .xs-block({
+            margin: 0 5px
+        });
     }
 }
 

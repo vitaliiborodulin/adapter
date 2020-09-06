@@ -1,19 +1,31 @@
 .hero {
     padding-top: 65px;
     padding-bottom: 142px;
+    .lg(padding-bottom, 70px);
     background-color: @bgc-grey;
+
+    br {
+        .lg(display, none);
+    }
 }
 .hero__content {
     .row-flex();
     align-items: center;
+    .lg(justify-content, center);
 }
 .hero__text {
     .col();
     .size(6);
+    .size-lg(8);
+    .size-sm(12);
+    .lg(text-align, center);
 }
 .hero__title {
     margin-bottom: 30px;
     font-size: 60px;
+    .md(font-size, 50px);
+    // .sm(font-size, 40px);
+    // .xs(font-size, 30px);
     font-weight: 600;
     line-height: 1;
     color: @color-blue;
@@ -26,14 +38,25 @@
     margin-bottom: 40px;
     font-weight: 300;
     font-size: 24px;
+    // .sm(font-size, 18px);
+    // .xs(font-size, 15px);
     line-height: 36px;
+    // .sm(line-height, 30px);
+    // .xs(line-height, 18px);
     color: @color-grey;
 }
 
 .hero-btn {
+    .lg-block({
+        margin: 0 auto;
+    })
 }
 
 .hero__image {
     .col();
     .size(6);
+    .size-lg(8);
+    .size-sm(12);
+    .lg(order, -1);
+    margin-bottom: 10px;
 }

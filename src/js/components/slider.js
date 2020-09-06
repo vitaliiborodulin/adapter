@@ -6,9 +6,15 @@ $('.extra__list').owlCarousel({
     responsiveClass:true,
     responsive:{
         0:{
-            items:1,
+            items:1
         },
-        770:{
+        600:{
+            items:2,
+        },
+        768:{
+            items:3,
+        },
+        992:{
             items:4,
         }
     }
@@ -24,7 +30,10 @@ $('.feedback__list').owlCarousel({
         0:{
             items:1,
         },
-        770:{
+        768:{
+            items:2,
+        },
+        992:{
             items:3,
         }
     }
@@ -38,9 +47,15 @@ $('.team__list--slider').owlCarousel({
     responsiveClass:true,
     responsive:{
         0:{
-            items:1,
+            items:1
         },
-        770:{
+        600:{
+            items:2,
+        },
+        768:{
+            items:3,
+        },
+        992:{
             items:4,
         }
     }

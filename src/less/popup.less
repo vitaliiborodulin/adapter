@@ -13,14 +13,18 @@
         left: 50%;
         top: 1%;
         transform: translateX(-50%);
+        .md-block({
+            left: 0;
+            transform: none;
+        });
     }
   
     .popup-form {
         width: 620px;
+        .md(width, 100%);
         background-color: #fff;
-        padding: 46px 50px 48px;
+        padding: 44px 50px 38px;
 
-        overflow-y: auto;
   
         &__close {
             position: absolute;
@@ -35,7 +39,7 @@
             font-size: 24px;
             font-weight: 500;
             color: @color-blue;
-            margin-bottom: 20px;
+            margin-bottom: 17px;
         }
 
         &__text {
@@ -56,6 +60,17 @@
             border-radius: 3px;
             background: transparent;
 
+        }
+
+        & > div {
+            display: flex;
+            justify-content: space-between;
+
+            .popup-form__input {
+                margin-left: 0;
+                margin-right: 0;
+                max-width: 48%;
+            }
         }
         
         &__area {
