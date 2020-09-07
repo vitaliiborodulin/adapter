@@ -42,7 +42,7 @@ $('.feedback__list').owlCarousel({
 $('.team__list--slider').owlCarousel({
     loop:true,
     nav:true,
-    margin:10,
+    margin:20,
     dots: true,
     responsiveClass:true,
     responsive:{

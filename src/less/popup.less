@@ -1,7 +1,7 @@
 .popup-overlay {
     position: fixed;
     display: none;
-    top: 0;
+    left: 0;
     top: 0;
     width: 100%;
     height: 100%;
@@ -14,21 +14,23 @@
         top: 1%;
         transform: translateX(-50%);
         .md-block({
-            left: 0;
+            left: 3%;
             transform: none;
         });
     }
   
     .popup-form {
         width: 620px;
-        .md(width, 100%);
         background-color: #fff;
         padding: 44px 50px 38px;
-
+        .md-block({
+            width: 96%;
+            padding: 22px 25px 19px;
+        });
   
         &__close {
             position: absolute;
-            right: 20px;
+            right: 6%;
             top: 0px;
             font-size: 35px;
             color: #DFDFE6;
@@ -59,17 +61,18 @@
             box-shadow: 0px 0px 25px rgba(49, 45, 112, 0.08);
             border-radius: 3px;
             background: transparent;
-
         }
 
         & > div {
             display: flex;
             justify-content: space-between;
+            .md(flex-direction, column);
 
             .popup-form__input {
                 margin-left: 0;
                 margin-right: 0;
                 max-width: 48%;
+                .md(max-width, 100%);
             }
         }
         
@@ -79,10 +82,6 @@
             color: @color-grey;
 
             resize: none;
-        }
-    
-        &-btn {
-           
         }
     
         &__bottom {
